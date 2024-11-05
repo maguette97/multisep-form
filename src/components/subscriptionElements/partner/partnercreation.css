@@ -1,0 +1,37 @@
+.search-results {
+    border: 1px solid #ccc;
+    background-color: white;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    border-radius: 4px;
+  }
+  
+  .search-results div:hover {
+    background-color: #f0f0f0;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Pour Firefox */
+}
+.alert {
+    color: red;
+    padding: 2px 0 0 0 ;
+    font-size: small;
+}
+input[type= "text"]{
+font-size: 0.8rem;
+}
+select {
+    font-size: 0.8rem;
+}
+
+  
