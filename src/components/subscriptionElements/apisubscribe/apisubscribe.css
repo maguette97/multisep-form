@@ -1,0 +1,51 @@
+
+.card {
+    
+    background: white;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkbox-wrapper input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkbox-wrapper .terms-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-wrapper .terms-label .label-text {
+    margin-left: 10px;
+  }
+  
+  .checkbox-wrapper .checkbox-svg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .checkbox-wrapper .checkbox-box {
+    fill: rgba(207, 205, 205, 0.596);
+    stroke: #E53935;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    transition: stroke-dashoffset 0.6s ease-in;
+  }
+  
+  .checkbox-wrapper .checkbox-tick {
+    stroke: #E53935;
+    stroke-dasharray: 172;
+    stroke-dashoffset: 172;
+    transition: stroke-dashoffset 0.6s ease-in;
+  }
+  
+  .checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-box,
+    .checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-tick {
+    stroke-dashoffset: 0;
+  }
+  
