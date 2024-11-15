@@ -21,7 +21,8 @@ export type PartnerForm ={
     indicatif:string
     country : string,
     currency : Currency,
-    apis:string[]
+    apis:string[],
+    balance:number
 
 
 }

@@ -47,15 +47,15 @@ export function AccountCreation() {
 
                     </div>
                     <div>
-            <label className={`dark:text-gray-200 ${errors.balance ? 'text-red-600' : ''}`}>Montant initial {errors.balance && <span className="text-red-600 font-bold">*</span>}</label>
-            <input {...register("balance", { required: true })} id="balance" type="number" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-md outline-none  " placeholder="le montant" />
+            <label className="">Montant initial </label>
+            <input defaultValue={0} {...register("balance")} id="balance" type="number" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-md outline-none  " placeholder="le montant" />
           </div>
 
                 </div>
                 <div className=" flex flex-col sm:flex-row sm:justify-between space-y-4 mt-8 items-center ">
                     <div className="">Faut-il activer le compte ?</div>
                     <div className="checkbox-wrapper-41 ">
-  <input type="checkbox"  {...register("active")}/>
+  <input type="checkbox"  defaultChecked {...register("active")}/>
 </div>
                 </div>
 

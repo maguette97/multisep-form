@@ -57,7 +57,7 @@ export function SubscriptionForm() {
   return (
     <FormProvider {...methods} >
     <form >
-    <div className="modal   border-t-4  border-[#E53935] ">
+    <div className="modal   border-t-4  border-[#E53935]  mt-4">
       <div className="form flex flex-col h-full">
         <label className="title">Souscrire un partenaire</label>
         <div className="tab-container relative bg-[#ebebec] p-[3px] rounded-[9px] mt-[10px] mx-[20px]">
