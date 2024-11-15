@@ -11,18 +11,14 @@
   0px 0px 0px rgba(0, 0, 0, 0.1);
 
 border-radius: 16px;
-display: flex; /* Ajouter display flex */
-flex-direction: column; /* Aligner en colonne */
-height: 85vh; /* Fixer une hauteur pour le modal */
-max-height: 700px; /* Limiter la hauteur maximale */
-overflow: hidden; /* Masquer le contenu débordant */
+display: flex; 
+flex-direction: column; 
+height: 80vh; 
+max-height: 700px; 
+overflow: hidden; 
 
   }
-  .benefits {
-    flex: 1; /* Prendre l'espace disponible */
-    overflow-y: auto; /* Activer le défilement vertical si nécessaire */
-}
-  
+
   .banner {
     width: 100%;
     height: 30px;
@@ -62,10 +58,10 @@ overflow: hidden; /* Masquer le contenu débordant */
   } */
   
   .indicator {
-  height: 28px; /* hauteur de l'indicateur */
+  height: 28px;
   background: #FFFFFF;
   position: absolute;
-  top: 2px; /* positionnez l'indicateur juste en dessous des onglets */
+  top: 2px; 
   z-index: 9;
   border: 0.5px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
@@ -110,14 +106,16 @@ overflow: hidden; /* Masquer le contenu débordant */
     display: flex;
     flex-direction: column;
     gap: 10px;
+    flex: 1; 
+    overflow-y: auto; 
   }
   
  
   
   .modal--footer {
     padding: 10px 20px;
-    background-color: #f9f9f9; /* Ajoutez un fond pour le footer */
-    border-top: 1px solid #e0e0e0; /* Optionnel : ajouter une bordure */
+    background-color: #f9f9f9; 
+    border-top: 1px solid #e0e0e0; 
 }
   
   .price {

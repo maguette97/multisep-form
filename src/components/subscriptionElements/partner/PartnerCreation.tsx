@@ -66,24 +66,24 @@ export function PartnerCreation() {
     <div >
       <div className="grid grid-cols-1 gap-6  sm:grid-cols-2">
         <div>
-          <label className={`dark:text-gray-200 ${errors.firstName ? 'text-red-600 ' : ''}`}  >Prénom  {errors.firstName?.type === 'required' && <span className="text-red-600 font-bold">*</span>}</label>
+          <label className={` ${errors.firstName ? 'text-red-600 ' : ''}`}  >Prénom  {errors.firstName?.type === 'required' && <span className="text-red-600 font-bold">*</span>}</label>
           <input  {...register("firstName", { required: true })} id="username" type="text" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border  outline-none rounded-md " />
         </div>
 
         <div>
-          <label className={`dark:text-gray-200 ${errors.lastName ? 'text-red-600 ' : ''}`}  >Nom {errors.lastName?.type === 'required' && <span className="text-red-600 font-bold">*</span>}</label>
+          <label className={` ${errors.lastName ? 'text-red-600 ' : ''}`}  >Nom {errors.lastName?.type === 'required' && <span className="text-red-600 font-bold">*</span>}</label>
           <input {...register("lastName", { required: true })} id="name" type="text" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border  outline-none rounded-md " />
         </div>
 
 
         <div>
-          <label className={`dark:text-gray-200 ${errors.email ? 'text-red-600 ' : ''}`}  >Email {errors.firstName?.type === 'required' && <span className="text-red-600 font-bold">*</span>}</label>
+          <label className={` ${errors.email ? 'text-red-600 ' : ''}`}  >Email {errors.email?.type === 'required' && <span className="text-red-600 font-bold">*</span>}</label>
           <input id="emailAddress" {...register("email", { required: true, pattern: (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/i) })} type="text" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border  outline-none rounded-md " />
           {errors.email?.type === 'pattern' && <p role="alert" className="alert">email invalide</p>}
         </div>
 
         <div>
-          <label className={`dark:text-gray-200 ${errors.lastName ? 'text-red-600 ' : ''}`}  >Numéro Téléphone {errors.phone?.type === 'required' && <span className="text-red-600 font-bold">*</span>}</label>
+          <label className={` ${errors.lastName ? 'text-red-600 ' : ''}`}  >Numéro Téléphone {errors.phone?.type === 'required' && <span className="text-red-600 font-bold">*</span>}</label>
           <div className="relative mt-2 max-w-xs  ">
             <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2 "  >
               <select
@@ -99,7 +99,7 @@ export function PartnerCreation() {
               </select>
             </div>
             <div className="flex items-center border rounded-md ">
-              <span className="pl-[4.5rem]  text-md   "   {...register("indicatif")} >{`+${isoQuery}`}</span>
+              <span className="pl-[4.5rem]  text-md   "   >{`+${isoQuery}`}</span>
               <input
                 {...register("phone", { required: true })}
                 type="number"
@@ -111,7 +111,7 @@ export function PartnerCreation() {
           </div>
         </div>
         <div>
-          <label className=" dark:text-gray-200" >Type partenaire </label>
+          <label className=" " >Type partenaire </label>
           <div
             className="relative group rounded-lg  mt-2  bg-white overflow-hidden before:absolute   before:content[''] before:right-0 before:rounded-full before:blur-lg "
           >
@@ -149,7 +149,7 @@ export function PartnerCreation() {
         </div>
 
         <div>
-          <label className={`dark:text-gray-200 ${errors.name ? 'text-red-600' : ''}`}>
+          <label className={` ${errors.name ? 'text-red-600' : ''}`}>
             Nom partenaire {errors.name && <span className="text-red-600 font-bold">*</span>}
           </label>
 
@@ -165,13 +165,13 @@ export function PartnerCreation() {
         </div>
 
         <div>
-          <label className={`dark:text-gray-200 ${errors.address ? 'text-red-600' : ''}`} >Adresse {errors.address && <span className="text-red-600 font-bold">*</span>} </label>
+          <label className={` ${errors.address ? 'text-red-600' : ''}`} >Adresse {errors.address && <span className="text-red-600 font-bold">*</span>} </label>
           <input  {...register("address", { required: true })} type="text" className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md  outline-none" />
 
         </div>
 
         <div className="relative pays" >
-          <label className={`dark:text-gray-200 ${errors.country ? 'text-red-600' : ''}`}>Pays  {errors.country && <span className="text-red-600 font-bold">*</span>}</label>
+          <label className={` ${errors.country ? 'text-red-600' : ''}`}>Pays  {errors.country && <span className="text-red-600 font-bold">*</span>}</label>
           <div className="flex items-center justify-between overflow-hidden  px-2 border-2 border-gray-200 rounded-lg h-1/2 mt-2">
             <input
               {...register("country", { required: true })}
